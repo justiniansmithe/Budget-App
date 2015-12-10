@@ -46,8 +46,6 @@ class Window(QtGui.QMainWindow):
         calculate_btn.resize(75, 50)
         calculate_btn.move(10, 125)
 
-       
-                                         
         self.show()
  
     def calculate_btn_on_click(self):
