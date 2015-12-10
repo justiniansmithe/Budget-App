@@ -64,20 +64,6 @@ class Window(QtGui.QMainWindow):
         self.budgetTextbox.setText(str(budget))
         self.amountSavedTextbox.setText(str(savings))
 
-
-    def computeBudget(earnings, percent_to_save):
-        message = "You made "+str(earnings)+" dollars, and want to save "+str(percent_to_save)+"% of those earnings\n"
-        
-        percent_to_save = percent_to_save * 0.01
-        budget = earnings - earnings * percent_to_save
-        savings = earnings - budget
-
-        message += "You have "+str(budget)+" dollars left in your budget to spend.\n"
-        message += "You have saved "+str(savings)+" dollars."
-        print(message)
-        
-        return budget
-
 def main():
     app = QtGui.QApplication(sys.argv)
     GUI = Window()
